@@ -10,19 +10,42 @@ import android.widget.TextView
 import androidx.annotation.NonNull
 import com.dam2.agus.gruposmusica.R
 
+
 class AdaptadorItems(
+
     private val context: Context,
-    val imagenes: Int,
-    val datos1: String,
-    val datos2: String
+    private val s1: Array<String>,
+    private val s2: Array<String>,
+    private val images: Array<Int>
+) : RecyclerView.Adapter<AdaptadorItems.ItemViewHolder>() {
 
-) : RecyclerView.Adapter<AdaptadorItems.MiViewHolder>() {
 
+    class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    class MiViewHolder : RecyclerView.ViewHolder {
+        var itemImage: ImageView = itemView.findViewById(R.id.imageLogo)
+        var itemTitle: TextView = itemView.findViewById(R.id.nombre_grupo)
+        var itemDetail: TextView = itemView.findViewById(R.id.genero_grupo)
+
     }
 
 
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.mis_filas, parent, false)
+        return ItemViewHolder(v)
+    }
+
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+        holder.itemTitle.text = s1[position]
+        holder.itemDetail.text = s2[position]
+        holder.itemImage.setImageResource(images[position])
+    }
+
+    override fun getItemCount(): Int {
+        return images.size
+    }
+
 }
+
+
 
 

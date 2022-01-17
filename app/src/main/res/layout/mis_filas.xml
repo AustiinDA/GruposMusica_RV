@@ -3,20 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:maxWidth="39dip"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds ="true"
+
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -31,7 +37,7 @@
                 android:text="Nombre artista"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/imageLogo"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView

@@ -2,7 +2,10 @@ package com.dam2.agus.gruposmusica
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.LinearLayout
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.dam2.agus.gruposmusica.adaptador.AdaptadorItems
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,5 +44,10 @@ class MainActivity : AppCompatActivity() {
         val strings1 = resources.getStringArray(R.array.grupos_musica)
         val strings2 = resources.getStringArray(R.array.genero)
 
+
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        val adaptadorI = AdaptadorItems(this, strings1, strings2, imagenes)
+        recyclerView.adapter = adaptadorI
+        recyclerView.layoutManager = LinearLayoutManager(this)
     }
 }

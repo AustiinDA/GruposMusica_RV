@@ -2,13 +2,21 @@
     <string name="app_name">GruposMusica</string>
 
     <string-array name="grupos_musica">
+        <item>Alice In Chains</item>
+        <item>America</item>
+        <item>Ann Peebles</item>
+        <item>Aphex Twin</item>
+        <item>Art Bakley</item>
+        <item>The Beatles</item>
+        <item>Bill Evans</item>
+        <item>Billy Paul</item>
+        <item>Cat Stevens</item>
         <item>The Doors</item>
         <item>Radiohead</item>
         <item>Joy Division</item>
         <item>Jeff Buckley</item>
         <item>Supertramp</item>
         <item>Syl Johnson</item>
-        <item>Ann Peebles</item>
         <item>TOOL</item>
         <item>De La Soul</item>
         <item>Fat Jon</item>
@@ -16,10 +24,7 @@
         <item>Fleetwood Mac</item>
         <item>Creedence Clearwater Revival</item>
         <item>David Bowie</item>
-        <item>Cat Stevens</item>
-        <item>America</item>
         <item>Rod Stewart</item>
-        <item>Billy Paul</item>
         <item>Etta James</item>
         <item>James Brown</item>
         <item>R.E.M.</item>
@@ -33,18 +38,13 @@
         <item>Phil Collins</item>
         <item>Queen</item>
         <item>Soundgarden</item>
-        <item>Alice In Chains</item>
-        <item>Bill Evans</item>
-        <item>Aphex Twin</item>
         <item>U2</item>
         <item>Patti Smith</item>
         <item>Kamasi Washington</item>
         <item>Miles Davis</item>
         <item>Gorillaz</item>
-        <item>Art Bakley</item>
         <item>CPV</item>
         <item>Wu-Tang Clan</item>
-        <item>The Beatles</item>
     </string-array>
 
     <string-array name="genero">
@@ -55,8 +55,6 @@
         <item>Reggae</item>
         <item>Funk/Soul</item>
         <item>Rock</item>
-
-
     </string-array>
 
 </resources>
